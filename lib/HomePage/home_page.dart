@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:news/AppBarIcons/profile.dart';
+import 'package:news/Pages/movies.dart';
+import 'package:news/Pages/news_adda.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -44,7 +46,7 @@ class _HomePageState extends State<HomePage> {
         drawer: Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
-            children: const <Widget>[
+            children: <Widget>[
               DrawerHeader(
                 child: Text(
                   'BolloywoodMDB',
@@ -57,24 +59,54 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 leading: Icon(Icons.house),
                 title: Text('News & Adda    >'),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => NewsAdda(),
+                  ));
+                },
               ),
               ListTile(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+                },
                 leading: Icon(Icons.movie_filter_outlined),
                 title: Text('Movies    >'),
               ),
               ListTile(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+                },
                 leading: Icon(Icons.house),
                 title: Text('New Releases'),
               ),
               ListTile(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+                },
                 leading: Icon(Icons.person),
                 title: Text('Account'),
               ),
               ListTile(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+                },
                 leading: Icon(Icons.star_half_sharp),
                 title: Text('Reviews'),
               ),
               ListTile(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ));
+                },
                 leading: Icon(Icons.logout),
                 title: Text('Logout'),
               ),
@@ -82,7 +114,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         body: Center(
-          child: Text("Movies"),
+          child: Text("movies"),
         ),
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
