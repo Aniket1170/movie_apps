@@ -20,7 +20,7 @@ class _ProfileState extends State<Profile> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 230,
+                  height: 190,
                 ),
                 Image.asset(
                   "assets/images/download.png",
@@ -42,10 +42,11 @@ class _ProfileState extends State<Profile> {
                     color: Colors.white,
                   ),
                   label: Text("Log in with Facebook"),
-                  style: ElevatedButton.styleFrom(minimumSize: Size(330, 30)),
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.blueAccent, minimumSize: Size(330, 50)),
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 ElevatedButton.icon(
                   onPressed: () {
@@ -61,7 +62,7 @@ class _ProfileState extends State<Profile> {
                   label: Text("Log in with Google"),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.redAccent,
-                    minimumSize: Size(330, 30),
+                    minimumSize: Size(330, 50),
                   ),
                 ),
                 SizedBox(
