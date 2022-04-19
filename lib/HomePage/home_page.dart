@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:news/AppBarIcons/profile.dart';
 import 'package:news/Pages/movies.dart';
 import 'package:news/Pages/news_adda.dart';
+import 'package:news/Pages/profile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,6 +12,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int myIndex = 1;
+  List<Widget> widgetList = [
+    NewsAdda(),
+    Movies(),
+    Profiles(),
+  ];
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -114,9 +120,15 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         body: Center(
-          child: Text("movies"),
+          child: widgetList[myIndex],
         ),
         bottomNavigationBar: BottomNavigationBar(
+            onTap: (index) {
+              setState(() {
+                myIndex = index;
+              });
+            },
+            currentIndex: myIndex,
             type: BottomNavigationBarType.fixed,
             backgroundColor: Colors.redAccent,
             items: [
