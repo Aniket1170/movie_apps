@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:news/AppBarIcons/profile.dart';
+import 'package:news/Pages/home.dart';
+import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
 import 'package:news/Pages/news_adda.dart';
-import 'package:news/Pages/profile.dart';
+import 'package:news/Pages/profiles.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,8 +14,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int myIndex = 1;
-  List<Widget> widgetList = [
+  int myIndex = 0;
+  final screens = [
+    Home(),
     NewsAdda(),
     Movies(),
     Profiles(),
@@ -74,7 +77,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => Movies(),
                   ));
                 },
                 leading: Icon(Icons.movie_filter_outlined),
@@ -83,7 +86,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => Movies(),
                   ));
                 },
                 leading: Icon(Icons.house),
@@ -101,7 +104,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomePage(),
+                    builder: (context) => MovieReview(),
                   ));
                 },
                 leading: Icon(Icons.star_half_sharp),
@@ -120,17 +123,33 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         body: Center(
-          child: widgetList[myIndex],
+          child: screens[myIndex],
         ),
         bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
-              setState(() {
-                myIndex = index;
-              });
+              if (index == 0) {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home()));
+              } else if (index == 1) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => NewsAdda()));
+              } else if (index == 2) {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Movies()));
+              } else if (index == 3) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Profiles()));
+              } else {
+                setState(() {
+                  myIndex = index;
+                });
+              }
             },
             currentIndex: myIndex,
             type: BottomNavigationBarType.fixed,
             backgroundColor: Colors.redAccent,
+            unselectedItemColor: Colors.white,
+            selectedItemColor: Colors.white,
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),

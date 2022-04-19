@@ -20,15 +20,15 @@ class _ProfileState extends State<Profile> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 250,
+                  height: 230,
                 ),
                 Image.asset(
                   "assets/images/download.png",
-                  width: 100,
-                  height: 50,
+                  width: 160,
+                  height: 80,
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 ElevatedButton.icon(
                   onPressed: () {
