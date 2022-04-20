@@ -17,6 +17,19 @@ class _ProfilesState extends State<Profiles> {
           "profile",
         ),
       ),
+      body: Column(
+        children: [
+          SizedBox(height: 10.0),
+          Text(
+            "Profile",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
