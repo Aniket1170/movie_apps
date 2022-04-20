@@ -9,11 +9,19 @@ class ItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: ListTile(
-      leading: Image.asset("assets/images/chris.jpg"),
+    return ListTile(
+      horizontalTitleGap: 16.0,
+      leading: ClipRRect(
+        borderRadius: BorderRadius.circular(5),
+        child: Image.asset(
+          "assets/images/ranbir.jpg",
+          width: 80,
+          height: 150,
+          fit: BoxFit.cover,
+        ),
+      ),
       title: Text(item.description),
       subtitle: Text(item.name),
-    ));
+    );
   }
 }
