@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news/AppBarIcons/profile.dart';
+import 'package:news/HomePage/drawer.dart';
+import 'package:news/Pages/about_us.dart';
 import 'package:news/Pages/home.dart';
 import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
@@ -52,76 +54,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              DrawerHeader(
-                child: Text(
-                  'BolloywoodMDB',
-                  style: TextStyle(
-                    color: Colors.redAccent,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
-                leading: Icon(Icons.house),
-                title: Text('News & Adda    >'),
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => NewsAdda(),
-                  ));
-                },
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => Movies(),
-                  ));
-                },
-                leading: Icon(Icons.movie_filter_outlined),
-                title: Text('Movies    >'),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => Movies(),
-                  ));
-                },
-                leading: Icon(Icons.house),
-                title: Text('New Releases'),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomePage(),
-                  ));
-                },
-                leading: Icon(Icons.person),
-                title: Text('Account'),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => MovieReview(),
-                  ));
-                },
-                leading: Icon(Icons.star_half_sharp),
-                title: Text('Reviews'),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => HomePage(),
-                  ));
-                },
-                leading: Icon(Icons.logout),
-                title: Text('Logout'),
-              ),
-            ],
-          ),
-        ),
+        drawer: Drawers(),
         body: Center(
           child: screens[myIndex],
         ),
