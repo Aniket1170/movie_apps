@@ -75,16 +75,23 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Positioned.fill(
-                      child: Align(
-                    alignment: Alignment(15.00, 0.70),
-                    child: Text(
-                      "Lorem ipsum dolor sit amet,consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut",
-                      style: TextStyle(
-                        color: Colors.white,
-                        backgroundColor: Colors.black,
+                    child: Align(
+                      alignment: Alignment(7.90, 0.90),
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: Colors.black45,
+                        ),
+                        child: Text(
+                          "Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                            letterSpacing: 0.40,
+                          ),
+                        ),
                       ),
                     ),
-                  ))
+                  ),
                 ],
               )
             ],
