@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:news/HomePage/home_page.dart';
+import 'package:news/Pages/movie_details.dart';
+import 'package:news/Pages/reviews.dart';
 
 class Movies extends StatefulWidget {
   const Movies({Key? key}) : super(key: key);
@@ -35,12 +38,17 @@ class _MoviesState extends State<Movies> {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            Text(
-              "CALENDER 2022",
-              style: TextStyle(
-                color: Color(0xff4C4E52),
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+            Positioned.fill(
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "CALENDER 2022",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Color(0xff4C4E52),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 10),
@@ -80,6 +88,36 @@ class _MoviesState extends State<Movies> {
                         ),
                       );
                     })),
+            Row(children: [
+              SizedBox(width: 1),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MovieDetails()),
+                    );
+                  },
+                  child: Image.asset(
+                    "assets/images/endgame.jpg",
+                    width: 180,
+                    height: 350,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(width: 10),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  "assets/images/doctorstrangetwo.jpg",
+                  width: 180,
+                  height: 350,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ]),
           ],
         ),
       ),

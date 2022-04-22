@@ -3,6 +3,7 @@ import 'package:news/Pages/about_us.dart';
 import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
 import 'package:news/Pages/news_adda.dart';
+import 'package:news/Pages/profiles.dart';
 
 import 'home_page.dart';
 
@@ -54,7 +55,7 @@ class Drawers extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => AboutUs(),
+                builder: (context) => Profiles(),
               ));
             },
             leading: Icon(Icons.person),
