@@ -6,6 +6,7 @@ import 'package:news/Pages/home.dart';
 import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
 import 'package:news/Pages/news_adda.dart';
+import 'package:news/Pages/news_details.dart';
 import 'package:news/Pages/profiles.dart';
 
 class HomePage extends StatefulWidget {
@@ -46,7 +47,12 @@ class _HomePageState extends State<HomePage> {
             ),
             IconButton(
               icon: Icon(Icons.notifications),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NewsDetails()),
+                );
+              },
             ),
             IconButton(
               icon: Icon(Icons.search),
