@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:news/HomePage/home_page.dart';
-import 'package:news/Pages/news_details.dart';
 
-class NewsAdda extends StatefulWidget {
-  const NewsAdda({Key? key}) : super(key: key);
+class PartiesEvents extends StatefulWidget {
+  const PartiesEvents({Key? key}) : super(key: key);
 
   @override
-  State<NewsAdda> createState() => _NewsAddaState();
+  State<PartiesEvents> createState() => _PartiesEventsState();
 }
 
-class _NewsAddaState extends State<NewsAdda> {
+class _PartiesEventsState extends State<PartiesEvents> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,21 +34,13 @@ class _NewsAddaState extends State<NewsAdda> {
             ),
             Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => NewsDetails()),
-                    );
-                  },
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      "assets/images/ranbir.jpg",
-                      width: 180,
-                      height: 130,
-                      fit: BoxFit.cover,
-                    ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    "assets/images/ranbir.jpg",
+                    width: 180,
+                    height: 130,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 SizedBox(width: 6),
@@ -79,21 +69,13 @@ class _NewsAddaState extends State<NewsAdda> {
             ),
             Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => NewsDetails()),
-                    );
-                  },
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      "assets/images/ranbir.jpg",
-                      width: 180,
-                      height: 130,
-                      fit: BoxFit.cover,
-                    ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    "assets/images/ranbir.jpg",
+                    width: 180,
+                    height: 130,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 SizedBox(width: 6),
@@ -122,21 +104,13 @@ class _NewsAddaState extends State<NewsAdda> {
             ),
             Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => NewsDetails()),
-                    );
-                  },
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      "assets/images/ranbir.jpg",
-                      width: 180,
-                      height: 130,
-                      fit: BoxFit.cover,
-                    ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    "assets/images/ranbir.jpg",
+                    width: 180,
+                    height: 130,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 SizedBox(width: 6),
@@ -165,21 +139,13 @@ class _NewsAddaState extends State<NewsAdda> {
             ),
             Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => NewsDetails()),
-                    );
-                  },
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      "assets/images/ranbir.jpg",
-                      width: 180,
-                      height: 130,
-                      fit: BoxFit.cover,
-                    ),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(
+                    "assets/images/ranbir.jpg",
+                    width: 180,
+                    height: 130,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 SizedBox(width: 6),
