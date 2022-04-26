@@ -13,7 +13,7 @@ class _PartiesEventsState extends State<PartiesEvents> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        title: Text("News And Adda"),
+        title: Text("Parties And Events"),
       ),
       body: Container(
         padding: EdgeInsets.all(10.0),
@@ -24,7 +24,7 @@ class _PartiesEventsState extends State<PartiesEvents> {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "News And Adda",
+                  "Parties And Events",
                   style: TextStyle(
                       color: Color(0xff484848),
                       fontWeight: FontWeight.bold,
