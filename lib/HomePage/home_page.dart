@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news/AppBarIcons/profile.dart';
 import 'package:news/HomePage/drawer.dart';
 import 'package:news/Pages/about_us.dart';
+import 'package:news/Pages/celebrity_list.dart';
 import 'package:news/Pages/home.dart';
 import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
@@ -9,6 +10,7 @@ import 'package:news/Pages/news_adda.dart';
 import 'package:news/Pages/news_details.dart';
 import 'package:news/Pages/posters.dart';
 import 'package:news/Pages/profiles.dart';
+import 'package:news/Pages/watchlist_movies.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -60,7 +62,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Posters()),
+                  MaterialPageRoute(builder: (context) => MovieReview()),
                 );
               },
             ),

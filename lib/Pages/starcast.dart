@@ -353,6 +353,235 @@ class _StarcastState extends State<Starcast> {
                   ],
                 ),
                 SizedBox(height: 20),
+                Row(
+                  children: [
+                    Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          "Videos",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        )),
+                    SizedBox(width: 275),
+                    Text(
+                      "See all",
+                      style: TextStyle(
+                        color: Color(0xff484848),
+                        fontSize: 13,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(height: 10),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: SizedBox(
+                        height: 170.0,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Container(
+                              width: 150,
+                              height: 200,
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/ranbir.jpg",
+                                    height: 150,
+                                    width: 150,
+                                  ),
+                                  Text("Brahmāstra trailer"),
+                                ],
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              width: 150,
+                              height: 200,
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/ranbir.jpg",
+                                    height: 150,
+                                    width: 150,
+                                  ),
+                                  Text("Brahmāstra trailer"),
+                                ],
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              width: 150,
+                              height: 200,
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/ranbir.jpg",
+                                    height: 150,
+                                    width: 150,
+                                  ),
+                                  Text("Brahmāstra trailer"),
+                                ],
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              width: 150,
+                              height: 200,
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/ranbir.jpg",
+                                    height: 150,
+                                    width: 150,
+                                  ),
+                                  Text("Brahmāstra trailer"),
+                                ],
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Container(
+                              width: 150,
+                              height: 200,
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/ranbir.jpg",
+                                    height: 150,
+                                    width: 150,
+                                  ),
+                                  Text("Brahmāstra trailer"),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                ),
+                SizedBox(height: 10),
+                Row(
+                  children: [
+                    Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          "Photos",
+                          style: TextStyle(
+                              color: Color(0xff484848),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        )),
+                    SizedBox(width: 253),
+                    Text(
+                      "See all",
+                      style: TextStyle(
+                        color: Color(0xff484848),
+                        fontSize: 13,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(height: 10),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(
+                            "assets/images/avengerstwo.jpg",
+                            width: 180,
+                            height: 280,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          "Avengers Endgame",
+                          style: TextStyle(
+                              color: Color(0xff484848),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 10),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(
+                            "assets/images/avengerstwo.jpg",
+                            width: 180,
+                            height: 280,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          "Avengers Endgame",
+                          style: TextStyle(
+                              color: Color(0xff484848),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(
+                            "assets/images/avengerstwo.jpg",
+                            width: 180,
+                            height: 280,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          "Avengers Endgame",
+                          style: TextStyle(
+                              color: Color(0xff484848),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 10),
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(
+                            "assets/images/avengerstwo.jpg",
+                            width: 180,
+                            height: 280,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          "Avengers Endgame",
+                          style: TextStyle(
+                              color: Color(0xff484848),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

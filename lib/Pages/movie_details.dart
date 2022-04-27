@@ -550,6 +550,97 @@ class MovieDetails extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: SizedBox(
+                      height: 170.0,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          SizedBox(width: 10),
+                          Container(
+                            width: 150,
+                            height: 200,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/ranbir.jpg",
+                                  height: 150,
+                                  width: 150,
+                                ),
+                                Text("Brahmāstra trailer"),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          Container(
+                            width: 150,
+                            height: 200,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/ranbir.jpg",
+                                  height: 150,
+                                  width: 150,
+                                ),
+                                Text("Brahmāstra trailer"),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          Container(
+                            width: 150,
+                            height: 200,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/ranbir.jpg",
+                                  height: 150,
+                                  width: 150,
+                                ),
+                                Text("Brahmāstra trailer"),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          Container(
+                            width: 150,
+                            height: 200,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/ranbir.jpg",
+                                  height: 150,
+                                  width: 150,
+                                ),
+                                Text("Brahmāstra trailer"),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 10),
+                          Container(
+                            width: 150,
+                            height: 200,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/ranbir.jpg",
+                                  height: 150,
+                                  width: 150,
+                                ),
+                                Text("Brahmāstra trailer"),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              ),
+              SizedBox(height: 10),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 child: Column(
