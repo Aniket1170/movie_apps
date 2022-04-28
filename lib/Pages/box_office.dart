@@ -14,7 +14,13 @@ class _BoxOfficeState extends State<BoxOffice> {
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
         title: Text(
-          "News and Adda",
+          "Box Office",
+        ),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Column(
+          children: [],
         ),
       ),
     );

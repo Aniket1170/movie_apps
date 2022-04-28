@@ -6,8 +6,11 @@ import 'package:news/Pages/celebrity_list.dart';
 import 'package:news/Pages/home.dart';
 import 'package:news/Pages/movie_reviews.dart';
 import 'package:news/Pages/movies.dart';
+import 'package:news/Pages/movies_stills.dart';
+import 'package:news/Pages/my_ratings.dart';
 import 'package:news/Pages/news_adda.dart';
 import 'package:news/Pages/news_details.dart';
+import 'package:news/Pages/parties_eventstwo.dart';
 import 'package:news/Pages/posters.dart';
 import 'package:news/Pages/profiles.dart';
 import 'package:news/Pages/watchlist_movies.dart';
@@ -62,7 +65,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MovieReview()),
+                  MaterialPageRoute(builder: (context) => PartiesEventsTwo()),
                 );
               },
             ),
